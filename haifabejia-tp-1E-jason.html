@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Données JSON des Tâches</title>
+  <script>
+    let tasks = [
+      {"id":"1","title":"devoirs","description":"Compléter des exercices","creationDate":"2024-04-08","dueDate":"2024-04-10","idPriorite":"2","idStatut":"1","idType":"3","idUrgency":"2"},
+      {"id":"2","title":"faire les courses","description":"lait, œufs, pain","creationDate":"2024-04-07","dueDate":"2024-04-08","idPriorite":"3","idStatut":"1","idType":"1","idUrgency":"3"},
+      {"id":"3","title":"compte rendu","description":"rapport annuel de travail","creationDate":"2024-04-06","dueDate":"2024-04-09","idPriorite":"1","idStatut":"2","idType":"2","idUrgency":"1"}
+    ];
+
+    let priorities = [
+      {"idPriority":"1","priority":"Tres important"},
+      {"idPriority":"2","priority":"Important"},
+      {"idPriority":"3","priority":"Normal"},
+      {"idPriority":"4","priority":"Faible"},
+      {"idPriority":"5","priority":"Optionnel"}
+    ];
+
+    let statuses = [
+      {"idStatut":"1","statut":"en attente"},
+      {"idStatut":"2","statut":"En cours"},
+      {"idStatut":"3","statut":"Termine"},
+      {"idStatut":"4","statut":"Annule"}
+    ];
+
+    let types = [
+      {"idType":"1","type":"Personnel"},
+      {"idType":"2","type":"travail"},
+      {"idType":"3","type":"etudes"},
+      {"idType":"4","type":"Autre"}
+    ];
+
+    let urgencies = [
+      {"idUrgency":"1","urgency":"tres urgent"},
+      {"idUrgency":"2","urgency":"Urgent"},
+      {"idUrgency":"3","urgency":"Normal"},
+      {"idUrgency":"4","urgency":"Faible"}
+    ];
+
+    console.log(tasks);
+    console.log(priorities);
+    console.log(statuses);
+    console.log(types);
+    console.log(urgencies);
+  </script>
+</head>
+<body>
+  <h1>Données des tâches affichées dans la console</h1>
+</body>
+</html>
